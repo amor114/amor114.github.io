@@ -15,8 +15,18 @@ $.getJSON(weatherAlertsUrl, function(data) {
       var alertColor = 'orange';
       if (feature.properties.severity === 'Severe') alertColor = 'red';
       return { color: alertColor };
+      if (feature.properties.severity === 'Extreme') alertColor = 'green';
+      return { color: alertColor };
+      if (feature.properties.severity === 'Moderate') alertColor = 'yellow';
+     return { color: alertColor };
     },
-    style: function(feature){
+    onEachFeature: function(feature, layer) {
+      layer.bindPopup(feature.properties.headline);
+    }
+  }).addTo(map);
+});
+
+style: function(feature){
      var alertColor = 'orange';
      if (feature.properties.severity === 'Moderate') alertColor = 'yellow';
      return { color: alertColor };
@@ -26,8 +36,3 @@ $.getJSON(weatherAlertsUrl, function(data) {
       if (feature.properties.severity === 'Extreme') alertColor = 'green';
       return { color: alertColor };
     },
-    onEachFeature: function(feature, layer) {
-      layer.bindPopup(feature.properties.headline);
-    }
-  }).addTo(map);
-});
