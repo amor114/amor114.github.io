@@ -1,1 +1,6 @@
-# amor114.github.io
+# amor114- Leaflet Web Map GEOG 4046
+This web map is for a GEOG 4046 assignment displaying real-time weather data.  
+
+## Current Weather
+This a map of current weather alerts and radar data in the United States. The alerts and weather radar are from the National Weather Service.  
+<https://amor114.github.io/weather>
