@@ -25,14 +25,3 @@ $.getJSON(weatherAlertsUrl, function(data) {
     }
   }).addTo(map);
 });
-
-style: function(feature){
-     var alertColor = 'orange';
-     if (feature.properties.severity === 'Moderate') alertColor = 'yellow';
-     return { color: alertColor };
-    },
-    style: function(feature){
-      var alertColor = 'orange';
-      if (feature.properties.severity === 'Extreme') alertColor = 'green';
-      return { color: alertColor };
-    },
