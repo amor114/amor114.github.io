@@ -1,4 +1,4 @@
-# amor114- Leaflet Web Map GEOG 4046
+# GEOG 4046 Leaflet Web Map
 This web map is for a GEOG 4046 assignment displaying real-time weather data.  
 
 ## Current Weather
