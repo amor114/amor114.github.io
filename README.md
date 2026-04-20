@@ -7,4 +7,5 @@ This a map of current weather alerts and radar data in the United States. The al
 
 ## Photo Map Tour
 A map of popular tourist locations along the Mississippi Gulf Coast with markers that viewers can click to display details and a photo.  
-The link to the live map is amor114.github.io/photomap 
+The link to the live map is <https://amor114.github.io/photomap>
+
